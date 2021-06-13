@@ -4,7 +4,9 @@
 
 
 ## Machine Learning
-- [Repositório com notebook](https://github.com/WilliamYizima/ml-examples/tree/master/01-Linear-Regression)
+- [Repositório com notebook-Linear Regression](https://github.com/WilliamYizima/ml-examples/tree/master/01-Linear-Regression)
+
+- [Repositório com NLP-inserir]()
 
 ## API
 
