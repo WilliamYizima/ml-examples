@@ -75,7 +75,7 @@ def analyze_nlp():
             - MeusPedidos
         [payload]: {
 	                "sentence":"nao consigo concluir pedido"
-                    "model":"modelo_nlp"
+                    "model_name":"modelo_nlp"
                     }
     """
     try:

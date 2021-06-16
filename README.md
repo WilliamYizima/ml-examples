@@ -6,12 +6,12 @@
 ## Machine Learning
 - [Repositório com notebook-Linear Regression](https://github.com/WilliamYizima/ml-examples/tree/master/01-Linear-Regression)
 
-- [Repositório com NLP-inserir]()
+- [Repositório com NLP-inserir](https://github.com/WilliamYizima/ml-examples/tree/02-nlp/02-NLP)
 
 
 ## API
 
-- [Repositório com API](https://github.com/WilliamYizima/ml-examples/tree/master/app)
+- [Repositório com API](https://github.com/WilliamYizima/ml-examples/tree/02-nlp/app)
 
 - Insira na pasta corpora:
     - [link do cbow_300](http://143.107.183.175:22980/download.php?file=embeddings/word2vec/cbow_s300.zip)
