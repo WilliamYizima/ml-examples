@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+<!--criamos um bloco de conteúdo a ser interpretado pelo python-->
+{% block conteudo %}
+<table class="table table-striped table-responsive table-bordered">
+    <thead>
+        <tr>
+            <th style=" width: 94px !important;">input</th>
+            <th>Intent</th>
+            <th>Response</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td><input id="minha-msg" type="text" placeholder="escreva aqui"></td>
+            <td><span id="intent-bot"></span></td>
+            <td><span id="response-bot"></span> </td>
+
+        </tr>
+    
+    </tbody>
+</table>
+{% endblock %}

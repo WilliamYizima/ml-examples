@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import pickle
 import numpy as np
 from helper.helper import predict_model as predict
@@ -42,7 +42,7 @@ def analyze_price():
 def analyze_luan():
     """Predict a price house
         [payload]: {
-	                "day": int, -> param x for the model
+	                "number_day": int, -> param x for the model
                     }
     """
     try:
@@ -83,17 +83,22 @@ def analyze_nlp():
         payload = request.json
         sentence = payload['sentence']
         model_name = payload['model_name']
+        # print(sentence)
+        # print(model_name)
         
         
-        
-        # use predict method(linear regression)
+        # use predict method(classifier)
         predict_sentence = predict(sentence,
                                    model_name)
+        # predict_sentence = 'teste'
 
         return jsonify({'classifier':predict_sentence,'sentence': sentence}), 200
     except Exception as e:
         return jsonify({'message':e}), 400
 
+@app.route('/',methods=["GET"])
+def view():
+    return render_template('view.html', titulo='Botinho Amigo', pokemons=[])
 
 if __name__ == '__main__':
     print(f'estou rodando na porta {PORT} 👹🌸')
